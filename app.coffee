@@ -18,4 +18,4 @@ app.get '/', (req, resp) ->
   resp.render 'index.eco', title: 'Your Title Here'
 
 # Listen
-app.listen 3000, -> console.log 'Listening on port 3000'
+app.listen process.env.C9_PORT, -> console.log 'Listening on port 3000'
